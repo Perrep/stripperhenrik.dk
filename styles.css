@@ -1,0 +1,90 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    padding: 0;
+}
+
+h1 {
+    margin: 0; /* Remove default margins */
+    margin-bottom: 20px;
+    padding: 0; /* Ensure no padding */
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#imageToDownload {
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Bootstrap-esque styling */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    padding: 10px 16px; /* Generous padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.0;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none; /* To remove the focus ring (not recommended for accessibility) */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateX(-50%) scale(1.05); /* Slight scale on hover */
+}
+
+button:active {
+    background-color: #004085; /* Even darker shade when active */
+}
+
+button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5); /* Bootstrap's focus shadow */
+}
+
+
+/* Responsive Design for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;  /* Decrease the font-size */
+        margin-bottom: 10px;
+    }
+
+    #imageToDownload {
+        max-width: 80vw;
+        max-height: 70vh;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;  /* Further decrease the font-size for mobile */
+        margin-bottom: 5px;
+    }
+
+    #imageToDownload {
+        max-width: 70vw;
+        max-height: 60vh;
+    }
+}
