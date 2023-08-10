@@ -30,10 +30,10 @@ h1 {
 
 button {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-
+    width:80%;
     /* Bootstrap-esque styling */
     background-color: #007bff; /* Bootstrap primary color */
     color: #fff;
@@ -52,6 +52,7 @@ button {
 button:hover {
     background-color: #0056b3; /* Darker shade on hover */
     transform: translateX(-50%) scale(1.05); /* Slight scale on hover */
+
 }
 
 button:active {
